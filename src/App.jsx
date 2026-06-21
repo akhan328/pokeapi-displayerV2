@@ -260,12 +260,24 @@ function App() {
 
   return (
     <>
-      <div className="card">
-        <div className="card-lights">
-          <span className="card-light card-light--main" />
-          <span className="card-light card-light--red" />
-          <span className="card-light card-light--yellow" />
-          <span className="card-light card-light--green" />
+      <div className={`card${!pokemon ? ' card--compact' : ''}`}>
+        <div className="card-top">
+          <div className="card-lights">
+            <span className="card-light card-light--main" />
+            <span className="card-light card-light--red" />
+            <span className="card-light card-light--yellow" />
+            <span className="card-light card-light--green" />
+          </div>
+          {(pokemon || error) && (
+            <button
+              className="card-close-button"
+              onClick={handleClear}
+              aria-label="Clear search"
+              title="Clear search"
+            >
+              &times;
+            </button>
+          )}
         </div>
         <div className="screen">
         <div className="search">
@@ -279,16 +291,6 @@ function App() {
           <button className="search-button" onClick={handleSearch}>
             Search
           </button>
-          {(pokemon || error) && (
-            <button
-              className="clear-button"
-              onClick={handleClear}
-              aria-label="Clear search"
-              title="Clear search"
-            >
-              &times;
-            </button>
-          )}
         </div>
 
         {loading && <p className="status-message">Loading...</p>}

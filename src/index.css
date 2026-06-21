@@ -27,6 +27,7 @@ body {
     background-attachment: fixed;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -34,5 +35,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 24px 0;
 }

@@ -11,13 +11,54 @@
         inset 0 -10px 24px rgba(0, 0, 0, 0.25),
         0 20px 45px rgba(0, 0, 0, 0.35);
     padding: 20px 20px 24px;
+    transition: max-width 0.2s ease;
+}
+
+.card.card--compact {
+    max-width: 460px;
+    min-height: 500px;
+    padding: 12px 16px 14px;
+}
+
+.card.card--compact .screen {
+    padding: 12px 16px 16px;
+}
+
+.card.card--compact .card-top {
+    padding: 2px 8px 8px;
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 12px 16px;
 }
 
 .card-lights {
     display: flex;
     align-items: center;
     gap: 14px;
-    padding: 4px 12px 16px;
+}
+
+.card-close-button {
+    border: 1px solid #82110a;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    background: #fbfcf9;
+    color: #6b7864;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.card-close-button:hover {
+    background: #20211f;
+    border-color: #20211f;
+    color: white;
 }
 
 .card-light {
@@ -78,26 +119,6 @@
     background: linear-gradient(180deg, #f1f5ee 0%, #f1f5ee 80%, rgba(241, 245, 238, 0));
 }
 
-.clear-button {
-    border: 1px solid #b9c4ad;
-    border-radius: 8px;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    background: #fbfcf9;
-    color: #6b7864;
-    font-size: 20px;
-    line-height: 1;
-    cursor: pointer;
-    transition: background 0.15s, color 0.15s;
-}
-
-.clear-button:hover {
-    background: #e8342a;
-    border-color: #e8342a;
-    color: white;
-}
-
 .search-input {
     flex: 1;
     border: 1px solid #b9c4ad;
@@ -153,13 +174,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    padding: 32px 0 8px;
+    gap: 16px;
+    padding: 16px 0 8px;
     color: #888;
 }
 
 .empty-image {
-    width: 120px;
+    width: 128px;
     opacity: 0.6;
 }
 
