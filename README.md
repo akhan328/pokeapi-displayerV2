@@ -4,9 +4,9 @@ A second pass at my original `pokeapi-displayer` project, this time rebuilt with
 
 ## What's new in V2
 
-- Rebuilt from vanilla HTML/CSS/JS into a React (Vite) app
-- A much more presentable, card-based UI instead of the original's basic layout
-- Way more Pokemon info on display: stats with bars, abilities, held items, alternate forms, evolution chain, sprite gallery, cries, and species details (habitat, color, growth rate, gender ratio, capture rate, and more)
+- Rebuilt from vanilla HTML/CSS/JS stack into a React (Vite) app
+- A much more presentable, card-based UI instead of the original's simple layout allowing more information to be displayed in a more visually appealing way
+- Way more Pokemon info on display with stat bars, abilities, held items, alternate forms, evolution chain, sprite gallery, cries, and species details (habitat, color, growth rate, gender ratio, capture rate, and more)
 
 ## Running locally
 
