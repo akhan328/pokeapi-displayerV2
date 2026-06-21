@@ -1,16 +1,28 @@
-# React + Vite
+# PokeApi Displayer V2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A second pass at my original `pokeapi-displayer` project, this time rebuilt with Vite + React. It fetches data from [PokeAPI](https://pokeapi.co/) and presents it in a cleaner, more informative layout.
 
-Currently, two official plugins are available:
+## What's new in V2
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Rebuilt from vanilla HTML/CSS/JS into a React (Vite) app
+- A much more presentable, card-based UI instead of the original's basic layout
+- Way more Pokemon info on display: stats with bars, abilities, held items, alternate forms, evolution chain, sprite gallery, cries, and species details (habitat, color, growth rate, gender ratio, capture rate, and more)
 
-## React Compiler
+## Running locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Then open the printed local URL and search for a Pokemon by name.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Skills Learned
+
+- Translating a vanilla JS project into a component-based React app
+- Working with multiple related PokeAPI endpoints (Pokemon, species, evolution chain) and combining their data
+- Building a clean, responsive UI from scratch
+
+## Reflection
+
+Revisiting an old project with new tools was a good way to see how much my approach has changed. It pushed me to dig deeper into what PokeAPI actually offers and to think more about presentation, not just getting the data on screen.
